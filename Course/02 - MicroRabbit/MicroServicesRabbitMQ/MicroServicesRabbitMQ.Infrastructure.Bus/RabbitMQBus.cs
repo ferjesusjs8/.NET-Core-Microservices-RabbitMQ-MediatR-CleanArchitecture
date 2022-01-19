@@ -108,8 +108,6 @@ namespace MicroServicesRabbitMQ.Infrastructure.Bus
             }
             catch (Exception ex)
             {
-
-                throw;
             }
         }
 
