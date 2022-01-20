@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MicroServicesRabbitMQ.Microservices.Banking.Api
+namespace MicroRabbit.Banking.Api
 {
     public class Startup
     {

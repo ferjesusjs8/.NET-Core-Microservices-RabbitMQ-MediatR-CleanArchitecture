@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MicroServicesRabbitMQ.Microservices.Banking.Api.Controllers
+namespace MicroRabbit.Banking.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
