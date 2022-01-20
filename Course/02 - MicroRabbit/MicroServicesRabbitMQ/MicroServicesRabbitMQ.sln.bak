@@ -31,13 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{1A214AB6-9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroServicesRabbitMQ.Microservices.Banking.Api", "MicroServicesRabbitMQ.Microservices.Banking.Api\MicroServicesRabbitMQ.Microservices.Banking.Api.csproj", "{55C82A43-16D3-45E5-A96D-DAF84260F9EC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{79817AF4-1DB4-41E5-AA82-6F773AC15C17}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServicesRabbitMQ.Microservice.Banking.Application", "MicroServicesRabbitMQ.Microservice.Banking.Application\MicroServicesRabbitMQ.Microservice.Banking.Application.csproj", "{35095BB8-6520-49CF-A1E7-DA694EB5CB82}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServicesRabbitMQ.Microservices.Banking.Data", "MicroServicesRabbitMQ.Microservices.Banking.Data\MicroServicesRabbitMQ.Microservices.Banking.Data.csproj", "{35E708A2-255D-46A5-8C6A-0868675A8FA7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroServicesRabbitMQ.Microservices.Banking.Domain", "MicroServicesRabbitMQ.Microservices.Banking.Domain\MicroServicesRabbitMQ.Microservices.Banking.Domain.csproj", "{A75D8938-DCBF-418A-B7F6-91F763F0A327}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{CE5EDE5D-12D5-400C-BE19-E557899D6F94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,18 +55,6 @@ Global
 		{55C82A43-16D3-45E5-A96D-DAF84260F9EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55C82A43-16D3-45E5-A96D-DAF84260F9EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55C82A43-16D3-45E5-A96D-DAF84260F9EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35095BB8-6520-49CF-A1E7-DA694EB5CB82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35095BB8-6520-49CF-A1E7-DA694EB5CB82}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35095BB8-6520-49CF-A1E7-DA694EB5CB82}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35095BB8-6520-49CF-A1E7-DA694EB5CB82}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35E708A2-255D-46A5-8C6A-0868675A8FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35E708A2-255D-46A5-8C6A-0868675A8FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35E708A2-255D-46A5-8C6A-0868675A8FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35E708A2-255D-46A5-8C6A-0868675A8FA7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A75D8938-DCBF-418A-B7F6-91F763F0A327}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A75D8938-DCBF-418A-B7F6-91F763F0A327}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A75D8938-DCBF-418A-B7F6-91F763F0A327}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A75D8938-DCBF-418A-B7F6-91F763F0A327}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -88,10 +70,7 @@ Global
 		{EAD9E607-F041-446D-9B7F-F8C1B221320E} = {9BB2EB45-156B-4EEE-9B28-3C2D154F94A4}
 		{1A214AB6-9DCC-4ADA-8EEE-7DAE3B94F072} = {9BB2EB45-156B-4EEE-9B28-3C2D154F94A4}
 		{55C82A43-16D3-45E5-A96D-DAF84260F9EC} = {16A2C481-071B-41CE-859B-BAD2D2BA6F84}
-		{79817AF4-1DB4-41E5-AA82-6F773AC15C17} = {9BB2EB45-156B-4EEE-9B28-3C2D154F94A4}
-		{35095BB8-6520-49CF-A1E7-DA694EB5CB82} = {79817AF4-1DB4-41E5-AA82-6F773AC15C17}
-		{35E708A2-255D-46A5-8C6A-0868675A8FA7} = {1A214AB6-9DCC-4ADA-8EEE-7DAE3B94F072}
-		{A75D8938-DCBF-418A-B7F6-91F763F0A327} = {EAD9E607-F041-446D-9B7F-F8C1B221320E}
+		{CE5EDE5D-12D5-400C-BE19-E557899D6F94} = {9BB2EB45-156B-4EEE-9B28-3C2D154F94A4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8C0221B4-3B53-4EC1-AA6C-A2A77E5ABD17}
