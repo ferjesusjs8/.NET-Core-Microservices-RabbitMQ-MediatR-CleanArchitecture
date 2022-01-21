@@ -1,8 +1,0 @@
-rabbitmqctl start_app 	-- starts server
-rabbitmqctl stop_app	-- stops the server
-rabbitmqctl reset		-- reset the server (need to stop the server first)
-rabbitmqctl add_user login password
-rabbitmqctl set_user_tags user administrator
-rabbitmqctl set_permission -p / user ".*" ".*" ".*"
-rabbitmqctl set_disk_free_limit
-
