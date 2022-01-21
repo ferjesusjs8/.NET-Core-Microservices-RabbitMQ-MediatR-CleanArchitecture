@@ -1,8 +1,8 @@
 ﻿using MicroServicesRabbitMQ.Domain.Core.Commands;
 
-namespace MicroRabbit.Banking.Domain.Commands
+namespace MicroRabbit.Transfer.Domain.Commands
 {
-    public abstract class TransferCommand : Command
+    public abstract class TransferLogCommand : Command
     {
         public int From { get; protected set; }
         public int To { get; protected set; }

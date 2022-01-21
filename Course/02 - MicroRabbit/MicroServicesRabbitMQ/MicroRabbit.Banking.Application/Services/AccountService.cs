@@ -4,6 +4,7 @@ using MicroRabbit.Banking.Domain.Commands;
 using MicroRabbit.Banking.Domain.Interfaces;
 using MicroRabbit.Banking.Domain.Models;
 using MicroServicesRabbitMQ.Domain.Core.Bus;
+using System;
 using System.Collections.Generic;
 
 namespace MicroRabbit.Banking.Application.Services
@@ -24,14 +25,36 @@ namespace MicroRabbit.Banking.Application.Services
             return _repository.GetAccounts();
         }
 
-        public void Transfer(AccountTransfer accountTransfer)
+        public string Transfer(AccountTransfer accountTransfer)
         {
-            var createTransferCommand = new CreateTransferCommand(
-                accountTransfer.FromAccount,
-                accountTransfer.ToAccount,
-                accountTransfer.TransferAmount);
+            var account = _repository.GetById(accountTransfer.FromAccount);
 
-            _eventBus.SendCommand(createTransferCommand);
+            if (account.AccountBalance >= accountTransfer.TransferAmount)
+            {
+                try
+                {
+                    account.AccountBalance -= accountTransfer.TransferAmount;
+
+                    var createTransferCommand = new CreateTransferCommand(
+                        accountTransfer.FromAccount,
+                        accountTransfer.ToAccount,
+                        accountTransfer.TransferAmount);
+
+                    _eventBus.SendCommand(createTransferCommand);
+
+                    _repository.Update(account);
+
+                    return $"Transaction completed successfully your new account balance is: {account.AccountBalance}.";
+                }
+                catch (Exception ex)
+                {
+                    return ex.Message;
+                }
+            }
+            else
+            {
+                return "Insuficient balance for this transfer!";
+            }
         }
     }
 }
